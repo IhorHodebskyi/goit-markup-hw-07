@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -15,20 +16,29 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tableta.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    
 </head>
 <body>
     <header class="">
         <div class="container header-cont ">
             <nav class="header-navigation">
                 <a href="./index.html" class="header-logo"><span class="hedelr-logo-web">Web</span>Studio</a>
+                <button type="button" class="button-mob">
+                    <svg class="" width="30px" height="19px">
+                        <use class="" href="./images/symbol.svg#icon-Vector-mob"></use>
+                    </svg>
+                </button>
                 <ul class="header-list">
                     <li class="header-item"><a href="" class="header-link current">Studio</a></li>
                     <li class="header-item"><a href="./portfolio.html" class="header-link">Portfolio</a></li>
                     <li class="header-item"><a href="" class="header-link">Contacts</a></li>
                 </ul>
             </nav>
-            <address class="address-header-list">
-                <ul class="header-list">
+            <address class="address">
+                <ul class="header-list-address">
                     <li class="header-item-c"><a href="mailto:info@devstudio.com" class="header-mail">info@devstudio.com</a></li>
                     <li class="header-item-c"><a href="tel:+110001111111" class="header-tel">+11 (000) 111-11-11</a></li>
                 </ul>
@@ -234,10 +244,11 @@
                     </ul>
             </div>
         </section>
+        <!-- ----------- customers ----------- -->
         <section class="customers">
             <div class="container">
                 <h2 class="customers-titel">Customers</h2>
-                <div class="customers-cont-cvg">
+                
                     <ul class="customers-list">
                         <li class="customers-item"><a class="customers-link" href="">
                             <svg class="customers-svg" width="104px" height="56px">
@@ -270,7 +281,7 @@
                                 </svg>
                         </a></li>
                     </ul>
-                </div>
+                
             </div>
         </section>
     </main>

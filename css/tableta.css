@@ -1,0 +1,132 @@
+@media screen and (min-width: 768px) {
+.container {
+    max-width: 768px;
+    padding: 0 16px;
+}
+
+/* ------------Header----------- */
+.header-logo{
+    margin-right: 120px;
+}
+.button-mob{
+    display: none;
+}
+.header-list {
+    display: flex;
+
+}
+.header-list-address {
+    display: block;
+}
+.header-cont {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E7E9FC;
+    border-radius: 4px;
+
+}
+.header-tel,
+.header-mail{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+}
+/* -------------Hero---------- */
+.hero-titel {
+    font-size: 56px;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+/* -------------benefits---------- */
+
+
+.aside-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+
+
+
+}
+.aside-item {
+flex-basis: calc((100% - 24px) / 2);
+
+}
+.aside-text {
+    margin-bottom: 0px;
+}
+/* ---------What are we doing---------- */
+/* -------------Our Team----------- */
+.section-team-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    
+}
+.section-team-item{
+    flex-basis: calc((100% - 24px) / 2);
+
+    
+}
+.section-team-item:not(:last-child) {
+    margin-bottom: 0px;
+}
+/* --------------customers---------------------------- */
+.customers-item {
+    flex-basis: calc((100% - 16px*2) / 3);
+    height: 88px;
+
+}
+/* ----------footer---------- */
+.footer-cont {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.footer-logo{
+    justify-content: start;
+}
+.footer-text{
+    
+}
+.footer-cont-soc {
+    margin-left: 16px;
+}
+
+/* ----------------Form------------------ */
+.form-titel {
+    text-align: left;
+}
+.footer-soc-titel{
+    text-align: left;
+}
+.form-input{
+    width: 264px;
+}
+.form-cont{
+    flex-direction: row;
+    gap: 16px;
+}
+/* ----------filters--------- */
+.section-filters-list {
+    justify-content: center;
+}
+/* --------------portfolio-------------- */
+.section-portfolio-list {
+flex-direction: row;
+flex-wrap: wrap;
+row-gap: 72px;
+}
+.section-portfolio-item {
+    flex-basis: calc((100% - 24px ) / 2);
+
+}
+/* ----------modal---------- */
+.modal {
+    width: 408px;
+    height: 584px;
+}
+}

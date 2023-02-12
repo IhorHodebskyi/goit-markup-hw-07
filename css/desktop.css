@@ -1,0 +1,70 @@
+@media screen and (min-width: 1200px) {
+.container {
+
+    max-width: 1128px;
+}
+/* ------------Header----------- */
+.header-logo {
+    margin-right: 76px;
+}
+.header-list-address {
+    display: flex;
+    gap: 40px;
+}
+.header-tel,
+.header-mail {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.hero-titel {
+    margin-bottom: 48px;
+}
+/* -------------benefits---------- */
+
+.aside-item {
+    flex-basis: calc((100% - 24px*3) / 4);
+}
+.aside-cont-svg{
+    display: flex;
+}
+.aside-subtitel{
+    font-weight: 500;
+}
+.aside-text{
+    font-weight: 400;
+}
+/* ---------What are we doing---------- */
+.section-work{
+    display: block;
+}
+
+
+.section-team-list {
+    flex-wrap: nowrap;
+}
+.section-team-item {
+    flex-basis: calc((100%-24px*3)/4);
+}
+/* --------------customers---------------------------- */
+.customers-item {
+    flex-basis: calc((100% - 16px*5) / 6);
+    height: 88px;
+}
+
+.footer-cont-soc {
+    margin-left: 100px;
+}
+/* ----------filters--------- */
+
+/* --------------portfolio-------------- */
+.section-portfolio-list {
+    row-gap: 48px;
+}
+.section-portfolio-item {
+    flex-basis: calc((100% - 24px * 2) / 3);
+
+}
+
+
+}

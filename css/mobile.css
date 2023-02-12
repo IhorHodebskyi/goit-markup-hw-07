@@ -1,0 +1,35 @@
+
+.container {
+    min-width: 320px;
+    max-width: 428px;
+    padding: 16px 24px;
+margin: auto;
+    border: 1px solid;
+}
+
+@media screen and (min-width:320px) , (max-width:480) {
+
+/* ------------Header----------- */
+.header-navigation {
+    justify-content: space-between;
+
+}
+/* -------------Hero---------- */
+
+.hero-titel {
+font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--background-light);
+    margin-bottom: 72px;
+}
+/* -------------benefits---------- */
+
+/* ---------What are we doing---------- */
+
+/* -------------Our Team----------- */
+/* ----------- customers ----------- */
+
+
+}
