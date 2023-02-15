@@ -23,6 +23,11 @@
         <div class="container header-cont ">
             <nav class="header-navigation">
                 <a href="./index.html" class="header-logo"><span class="hedelr-logo-web">Web</span>Studio</a>
+                <button type="button" data-modal-open class="button-mob">
+                    <svg class="menu-svg" width="30px" height="19px">
+                        <use class="" href="./images/symbol.svg#icon-Vector-mob"></use>
+                    </svg>
+                </button>
                 <ul class="header-list">
                     <li class="header-item"><a href="./index.html" class="header-link">Studio</a></li>
                     <li class="header-item"><a href="./portfolio.html" class="header-link current">Portfolio</a></li>
@@ -35,6 +40,58 @@
                     <li class="header-item-c"><a href="tel:+110001111111" class="header-tel">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+        </div>
+        <!-- ------------mob-manu---------- -->
+        <div class="cont-mob-manu is-hidden" data-modal>
+            <div class="mob-cont ">
+                <div>
+                    <nav class="mob-navigation">
+                        <button class="modal-close" data-modal-close type="button">
+                            <svg class="modal-svg" width="8px" height="8px">
+                                <use class="" href="./images/symbol.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
+                        <div>
+                            <ul class="mob-list">
+                                <li class="mob-item"><a href="./index.html" class="mob-link">Studio</a></li>
+                                <li class="mob-item"><a href="./portfolio.html" class="mob-link">Portfolio</a></li>
+                                <li class="mob-item"><a href="" class="mob-link accent">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div>
+                    <address class="mob-address">
+                        <ul class="mob-list-address">
+                            <li class="mob-item-c"><a href="tel:+110001111111" class="mob-tel">+11 (000) 111-11-11</a></li>
+                            <li class="mob-item-c"><a href="mailto:info@devstudio.com" class="mob-mail">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <ul class="mob-soc-list">
+                        <li class="mob-soc-item"><a href="" class="mob-soc-link">
+                                <svg class="mob-soc-svg" width="24px" height="24px">
+                                    <use class="mob-svg" href="./images/symbol.svg#icon-instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li class="mob-soc-item"><a href="" class="mob-soc-link">
+                                <svg class="mob-soc-svg" width="24px" height="24px">
+                                    <use class="mob-svg" href="./images/symbol.svg#icon-twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li class="mob-soc-item"><a href="" class="mob-soc-link">
+                                <svg class="mob-soc-svg" width="24px" height="24px">
+                                    <use class="mob-svg" href="./images/symbol.svg#icon-facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li class="mob-soc-item"><a href="" class="mob-soc-link">
+                                <svg class="mob-soc-svg" width="24px" height="24px">
+                                    <use class="mob-svg" href="./images/symbol.svg#icon-linkedin"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -55,6 +112,9 @@
                         <li class="section-portfolio-item">
                             <a class="portfolio-link" href="">
                                 <div class="portfolio-box">
+                                    <picture>
+                                        <source srcset="./images/portfolio_img1.jpg 1x, ./images/portfolio_img1-2x.jpg 2x" madia="(max-width: 1200px)">
+                                    </picture>
                                     <img src="./images/portfolio_img1.jpg" class="section-portfolio-img" alt="seven dimples are depicted" width="360">
                                 <div class="portfolio-overlay">
                                     <p class="portfolio-overlay-text text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
@@ -71,6 +131,9 @@
                         <li class="section-portfolio-item">
                             <a class="portfolio-link" href="">
                                 <div class="portfolio-box">
+                                    <picture>
+                                        <source srcset="./images/portfolio_img2.jpg 1x, ./images/portfolio_img2-2x.jpg 2x" madia="(max-width: 1200px)">
+                                    </picture>
                                     <img src="./images/portfolio_img2.jpg" class="section-portfolio-img" alt="the phone scans the code" width="360">
                                     <div class="portfolio-overlay">
                                     <p class="portfolio-overlay-text text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -88,6 +151,9 @@
                         <li class="section-portfolio-item">
                             <a class="portfolio-link" href="">
                                 <div class="portfolio-box">
+                                    <picture>
+                                        <source srcset="./images/portfolio_img3.jpg 1x, ./images/portfolio_img3-2x.jpg 2x" madia="(max-width: 1200px)">
+                                    </picture>
                                     <img src="./images/portfolio_img3.jpg" class="section-portfolio-img" alt="the computer next to which the phone is located"
                                         width="360">
                                         <div class="portfolio-overlay">
@@ -104,6 +170,9 @@
                         <li class="section-portfolio-item">
                             <a class="portfolio-link" href="">
                                 <div class="portfolio-box">
+                                    <picture>
+                                        <source srcset="./images/portfolio_img4.jpg 1x, ./images/portfolio_img4-2x.jpg 2x" madia="(max-width: 1200px)">
+                                    </picture>
                                     <img src="./images/portfolio_img4.jpg" class="section-portfolio-img"
                                         alt="the phone with the application activated in the car while driving" width="360">
                                         <div class="portfolio-overlay">
@@ -121,6 +190,9 @@
                         <li class="section-portfolio-item">
                             <a class="portfolio-link" href="">
                                 <div class="portfolio-box">
+                                    <picture>
+                                        <source srcset="./images/portfolio_img5.jpg 1x, ./images/portfolio_img5-2x.jpg 2x" madia="(max-width: 1200px)">
+                                    </picture>
                                     <img src="./images/portfolio_img5.jpg" class="section-portfolio-img" alt="five phones with enabled screensavers a month" width="360">
                                     <div class="portfolio-overlay">
                                         <p class="portfolio-overlay-text text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -137,6 +209,9 @@
                         <li class="section-portfolio-item">
                             <a class="portfolio-link" href="">
                                 <div class="portfolio-box">
+                                    <picture>
+                                        <source srcset="./images/portfolio_img6.jpg 1x, ./images/portfolio_img6-2x.jpg 2x" madia="(max-width: 1200px)">
+                                    </picture>
                                     <img src="./images/portfolio_img6.jpg" class="section-portfolio-img"
                                         alt="a girl in glasses and a sweater listens to music" width="360">
                                     <div class="portfolio-overlay">
@@ -155,6 +230,9 @@
                         <li class="section-portfolio-item">
                             <a class="portfolio-link" href="">
                                     <div class="portfolio-box">
+                                        <picture>
+                                            <source srcset="./images/portfolio_img7.jpg 1x, ./images/portfolio_img7-2x.jpg 2x" madia="(max-width: 1200px)">
+                                        </picture>
                                         <img src="./images/portfolio_img7.jpg" class="section-portfolio-img" alt="a bag of vegetables" width="360">
                                         <div class="portfolio-overlay">
                                             <p class="portfolio-overlay-text text">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
@@ -172,6 +250,9 @@
                         <li class="section-portfolio-item">
                             <a class="portfolio-link" href="">
                                 <div class="portfolio-box">
+                                    <picture>
+                                        <source srcset="./images/portfolio_img8.jpg 1x, ./images/portfolio_img8-2x.jpg 2x" madia="(max-width: 1200px)">
+                                    </picture>
                                     <img src="./images/portfolio_img8.jpg" class="section-portfolio-img" alt="a bag of vegetables" width="360">
                                     <div class="portfolio-overlay">
                                         <p class="portfolio-overlay-text text">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
@@ -189,6 +270,9 @@
                         <li class="section-portfolio-item">
                             <a class="portfolio-link" href="">
                                 <div class="portfolio-box">
+                                    <picture>
+                                        <source srcset="./images/portfolio_img9.jpg 1x, ./images/portfolio_img9-2x.jpg 2x" madia="(max-width: 1200px)">
+                                    </picture>
                                     <img src="./images/portfolio_img9.jpg" class="section-portfolio-img" alt="coffee is poured into a cup" width="360">
                                     <div class="portfolio-overlay">
                                         <p class="portfolio-overlay-text text">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
@@ -265,5 +349,6 @@
                 </form>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

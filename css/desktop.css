@@ -20,6 +20,18 @@
 .hero-titel {
     margin-bottom: 48px;
 }
+/* -------------Hero---------- */
+.hero {
+    background-image: var(--gra) , url(../images/people-office.jpg);
+    }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+    background-image: var(--gra), url(../images/people-office-2x.jpg);
+    }
+}
 /* -------------benefits---------- */
 
 .aside-item {

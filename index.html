@@ -26,8 +26,8 @@
         <div class="container header-cont ">
             <nav class="header-navigation">
                 <a href="./index.html" class="header-logo"><span class="hedelr-logo-web">Web</span>Studio</a>
-                <button type="button" class="button-mob">
-                    <svg class="" width="30px" height="19px">
+                <button type="button" data-modal-open class="button-mob">
+                    <svg class="menu-svg" width="30px" height="19px">
                         <use class="" href="./images/symbol.svg#icon-Vector-mob"></use>
                     </svg>
                 </button>
@@ -43,6 +43,57 @@
                     <li class="header-item-c"><a href="tel:+110001111111" class="header-tel">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+        </div>
+        <!-- ------------mob-manu---------- -->
+        <div class="cont-mob-manu is-hidden" data-modal>
+            <div class="mob-cont ">
+                <div>
+                    <nav class="mob-navigation">
+                        <button class="modal-close" data-modal-close type="button">
+                            <svg class="modal-svg" width="8px" height="8px">
+                                <use class="" href="./images/symbol.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
+                        <div>
+                            <ul class="mob-list">
+                                <li class="mob-item"><a href="" class="mob-link">Studio</a></li>
+                                <li class="mob-item"><a href="./portfolio.html" class="mob-link">Portfolio</a></li>
+                                <li class="mob-item"><a href="" class="mob-link accent">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div>
+                    <address class="mob-address">
+                        <ul class="mob-list-address">
+                            <li class="mob-item-c"><a href="tel:+110001111111" class="mob-tel">+11 (000) 111-11-11</a></li>
+                            <li class="mob-item-c"><a href="mailto:info@devstudio.com" class="mob-mail">info@devstudio.com</a></li>
+                        </ul>
+                    </address>
+                    <ul class="mob-soc-list">
+                        <li class="mob-soc-item"><a href="" class="mob-soc-link">
+                                <svg class="mob-soc-svg" width="24px" height="24px">
+                                    <use class="mob-svg" href="./images/symbol.svg#icon-instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li class="mob-soc-item"><a href="" class="mob-soc-link">
+                                <svg class="mob-soc-svg" width="24px" height="24px">
+                                    <use class="mob-svg" href="./images/symbol.svg#icon-twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li class="mob-soc-item"><a href="" class="mob-soc-link">
+                                <svg class="mob-soc-svg" width="24px" height="24px">
+                                    <use class="mob-svg" href="./images/symbol.svg#icon-facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li class="mob-soc-item"><a href="" class="mob-soc-link">
+                                <svg class="mob-soc-svg" width="24px" height="24px">
+                                    <use class="mob-svg" href="./images/symbol.svg#icon-linkedin"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+            </div >
         </div>
     </header>
     <main>
@@ -114,9 +165,23 @@
             <div class="container">
                 <h2 class="section-work-titel">What are we doing</h2>
                     <ul class="section-work-list">
-                        <li class="section-work-img"> <img src="./images/img1.jpg" alt="computer" width="360"></li>
-                        <li class="section-work-img"> <img src="./images/img2.jpg" alt="display" width="360"></li>
-                        <li class="section-work-img"> <img src="./images/img3.jpg" alt="phone" width="360"></li>
+                        <li class="section-work-img">
+                            <picture>
+                                <source srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
+                                madia="(max-width: 1200px)">
+                            </picture>
+                            <img src="./images/img1.jpg" alt="computer" width="360">
+                            </li>
+                        <li class="section-work-img">
+                            <picture>
+                                <source srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x" madia="(max-width: 1200px)">
+                            </picture>
+                            <img src="./images/img2.jpg" alt="display" width="360"></li>
+                        <li class="section-work-img">
+                            <picture>
+                                <source srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x" madia="(max-width: 1200px)">
+                            </picture>
+                            <img src="./images/img3.jpg" alt="phone" width="360"></li>
                     </ul>
             </div>
         </section>
@@ -126,6 +191,9 @@
                 <h2 class="section-team-titel">Our Team</h2>
                     <ul class="section-team-list">
                         <li class="section-team-item">
+                            <picture>
+                                <source srcset="./images/img21.jpg 1x, ./images/img21-2x.jpg 2x" madia="(max-width: 1200px)">
+                            </picture>
                             <img src="./images/img21.jpg" class="section-team-img" alt="a white man with a beard in a Chinese shirt" width="264">
                             <div class="team">
                                 <h3 class="section-team-subtitel subtitel">Mark Guerrero</h3>
@@ -155,6 +223,9 @@
                             </div>
                         </li>
                         <li class="section-team-item">
+                            <picture>
+                                <source srcset="./images/img22.jpg 1x, ./images/img22-2x.jpg 2x" madia="(max-width: 1200px)">
+                            </picture>
                             <img src="./images/img22.jpg" class="section-team-img" alt="a white man with a beard in a Chinese shirt" width="264">
                             <div class="team">
                                 <h3 class="section-team-subtitel subtitel">Tom Ford</h3>
@@ -184,6 +255,9 @@
                             </div>
                         </li>
                         <li class="section-team-item">
+                            <picture>
+                                <source srcset="./images/img23.jpg 1x, ./images/img23-2x.jpg 2x" madia="(max-width: 1200px)">
+                            </picture>
                             <img src="./images/img23.jpg" class="section-team-img" alt="a smiling white woman in a pink sweater" width="264">
                             <div class="team">
                                 <h3 class="section-team-subtitel subtitel">Camila Garcia</h3>
@@ -213,6 +287,9 @@
                             </div>
                         </li>
                         <li class="section-team-item">
+                            <picture>
+                                <source srcset="./images/img24.jpg 1x, ./images/img24-2x.jpg 2x" madia="(max-width: 1200px)">
+                            </picture>
                             <img src="./images/img24.jpg" class="section-team-img" alt="white man with a beard in a gray t-shirt" width="264">
                             <div class="team">
                                 <h3 class="section-team-subtitel subtitel">Daniel Wilson</h3>
