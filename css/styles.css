@@ -63,14 +63,7 @@ img {
 }
 
 
-/* .container {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
 
-} */
 
 .menu-svg{
     stroke: #2E2F42;
@@ -135,7 +128,7 @@ height: 100%;
     max-width: 428px;
     padding: 40px;
 margin: auto;
-    border: 1px solid;
+
 
 }
 .cont-mob-manu {
@@ -183,8 +176,9 @@ color: #434455;
 
 .mob-tel {
 font-weight: 600;
-font-size: 36px;
-line-height: 40px;
+font-size: 24px;
+line-height: 28px;
+font-style: normal;
 width: 337px;
 height: 40px;
 color: #4D5AE5;
@@ -193,8 +187,8 @@ color: #4D5AE5;
 .mob-soc-list {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 56px;
+    justify-content: space-between;
+
     margin-top: 48px;
 }
 
@@ -228,7 +222,7 @@ height: 48px;
 
 /* ---------hero---------*/
 .hero {
-    padding: 188px 0;
+    padding: 112px 0;
     background-image: var(--gra) , url(../images/Dark-bg-mob.jpg);
     flex-grow:1;
     background-repeat: no-repeat;
@@ -333,7 +327,6 @@ margin-bottom: 72px;
 font-size: 36px;
 line-height: 40px;
 margin-bottom: 8px;
-
 } 
 .aside-text {
     font-weight: 500;
@@ -376,7 +369,7 @@ gap: 24px;
 
 .section-team {
     background-color: var(--section-team);
-    padding: 120px 0;
+    padding: 96px 0 128px 0;
 }
 
 .section-team-titel {
@@ -666,7 +659,7 @@ margin-bottom: 72px;
 /* ----------filters--------- */
 
 .section-filters {
-    padding: 32px 0 100px 0;
+    padding: 48px 0;
 }
 
 .section-filters-list {
@@ -784,7 +777,8 @@ display: flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 392px;
+    min-width: 320px;
+    max-width: 392px;
     min-height: 586px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -874,10 +868,6 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 .modal-input:is(:hover, :focus)+ .modal-svg-input {
     fill: var(--color-brn-hover);
 }
-
-/* .modal-input:not(:focus):not(:placeholder-shown):valid{
-    background-color: rgb(168, 231, 140);
-} */
 
 .modal-input:not(:focus):not(:placeholder-shown):invalid{
     background-color: rgb(220, 174, 174);

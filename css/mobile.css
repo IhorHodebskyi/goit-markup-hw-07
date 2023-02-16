@@ -2,8 +2,11 @@
 .container {
     min-width: 320px;
     max-width: 428px;
-    padding: 16px 24px;
+    padding: 0 24px;
 margin: auto;
+}
+.header-cont {
+    padding: 16px 24px;
 }
 
 @media screen and (min-width:320px) , (max-width:480) {
@@ -11,6 +14,11 @@ margin: auto;
 /* ------------Header----------- */
 .header-navigation {
     justify-content: space-between;
+
+}
+.header-cont {
+    border-bottom: 1px solid #E7E9FC;
+    border-radius: 4px;
 
 }
 /* -------------Hero---------- */

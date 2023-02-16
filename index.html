@@ -26,7 +26,7 @@
         <div class="container header-cont ">
             <nav class="header-navigation">
                 <a href="./index.html" class="header-logo"><span class="hedelr-logo-web">Web</span>Studio</a>
-                <button type="button" data-modal-open class="button-mob">
+                <button type="button" data-menu-open class="button-mob">
                     <svg class="menu-svg" width="30px" height="19px">
                         <use class="" href="./images/symbol.svg#icon-Vector-mob"></use>
                     </svg>
@@ -45,20 +45,20 @@
             </address>
         </div>
         <!-- ------------mob-manu---------- -->
-        <div class="cont-mob-manu is-hidden" data-modal>
+        <div class="cont-mob-manu is-hidden" data-menu>
             <div class="mob-cont ">
                 <div>
                     <nav class="mob-navigation">
-                        <button class="modal-close" data-modal-close type="button">
+                        <button class="modal-close" data-menu-close type="button">
                             <svg class="modal-svg" width="8px" height="8px">
                                 <use class="" href="./images/symbol.svg#icon-close-black"></use>
                             </svg>
                         </button>
                         <div>
                             <ul class="mob-list">
-                                <li class="mob-item"><a href="" class="mob-link">Studio</a></li>
+                                <li class="mob-item"><a href="" class="mob-link accent">Studio</a></li>
                                 <li class="mob-item"><a href="./portfolio.html" class="mob-link">Portfolio</a></li>
-                                <li class="mob-item"><a href="" class="mob-link accent">Contacts</a></li>
+                                <li class="mob-item"><a href="" class="mob-link ">Contacts</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -168,20 +168,22 @@
                         <li class="section-work-img">
                             <picture>
                                 <source srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
-                                madia="(max-width: 1200px)">
+                                media="(min-width: 1200px)">
+                                <img src="./images/img1.jpg" alt="computer" width="360">
                             </picture>
-                            <img src="./images/img1.jpg" alt="computer" width="360">
-                            </li>
+                        </li>
                         <li class="section-work-img">
                             <picture>
-                                <source srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x" madia="(max-width: 1200px)">
+                                <source srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x" media="(max-width: 1200px)">
+                                <img src="./images/img2.jpg" alt="display" width="360">
                             </picture>
-                            <img src="./images/img2.jpg" alt="display" width="360"></li>
+                        </li>
                         <li class="section-work-img">
                             <picture>
-                                <source srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x" madia="(max-width: 1200px)">
+                                <source srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x" media="(max-width: 1200px)">
+                                <img src="./images/img3.jpg" alt="phone" width="360">
                             </picture>
-                            <img src="./images/img3.jpg" alt="phone" width="360"></li>
+                        </li>
                     </ul>
             </div>
         </section>
@@ -192,9 +194,9 @@
                     <ul class="section-team-list">
                         <li class="section-team-item">
                             <picture>
-                                <source srcset="./images/img21.jpg 1x, ./images/img21-2x.jpg 2x" madia="(max-width: 1200px)">
+                                <source srcset="./images/img21.jpg 1x, ./images/img21-2x.jpg 2x" media="(max-width: 1200px)">
+                                <img src="./images/img21.jpg" class="section-team-img" alt="a white man with a beard in a Chinese shirt" width="264">
                             </picture>
-                            <img src="./images/img21.jpg" class="section-team-img" alt="a white man with a beard in a Chinese shirt" width="264">
                             <div class="team">
                                 <h3 class="section-team-subtitel subtitel">Mark Guerrero</h3>
                                 <p class="section-team-text text">Product Designer</p>
@@ -224,9 +226,9 @@
                         </li>
                         <li class="section-team-item">
                             <picture>
-                                <source srcset="./images/img22.jpg 1x, ./images/img22-2x.jpg 2x" madia="(max-width: 1200px)">
+                                <source srcset="./images/img22.jpg 1x, ./images/img22-2x.jpg 2x" media="(max-width: 1200px)">
+                                <img src="./images/img22.jpg" class="section-team-img" alt="a white man with a beard in a Chinese shirt" width="264">
                             </picture>
-                            <img src="./images/img22.jpg" class="section-team-img" alt="a white man with a beard in a Chinese shirt" width="264">
                             <div class="team">
                                 <h3 class="section-team-subtitel subtitel">Tom Ford</h3>
                                 <p class="section-team-text text">Frontend Developer</p>
@@ -256,9 +258,9 @@
                         </li>
                         <li class="section-team-item">
                             <picture>
-                                <source srcset="./images/img23.jpg 1x, ./images/img23-2x.jpg 2x" madia="(max-width: 1200px)">
+                                <source srcset="./images/img23.jpg 1x, ./images/img23-2x.jpg 2x" media="(max-width: 1200px)">
+                                <img src="./images/img23.jpg" class="section-team-img" alt="a smiling white woman in a pink sweater" width="264">
                             </picture>
-                            <img src="./images/img23.jpg" class="section-team-img" alt="a smiling white woman in a pink sweater" width="264">
                             <div class="team">
                                 <h3 class="section-team-subtitel subtitel">Camila Garcia</h3>
                                 <p class="section-team-text text">Marketing</p>
@@ -288,10 +290,10 @@
                         </li>
                         <li class="section-team-item">
                             <picture>
-                                <source srcset="./images/img24.jpg 1x, ./images/img24-2x.jpg 2x" madia="(max-width: 1200px)">
+                                <source srcset="./images/img24.jpg 1x, ./images/img24-2x.jpg 2x" media="(max-width: 1200px)">
+                                <img src="./images/img24.jpg" class="section-team-img" alt="white man with a beard in a gray t-shirt" width="264">
                             </picture>
-                            <img src="./images/img24.jpg" class="section-team-img" alt="white man with a beard in a gray t-shirt" width="264">
-                            <div class="team">
+                                <div class="team">
                                 <h3 class="section-team-subtitel subtitel">Daniel Wilson</h3>
                                 <p class="section-team-text text">UI Designer</p>
                                 <ul class="team-soc-list">
@@ -427,18 +429,16 @@
                 <use class="" href="./images/symbol.svg#icon-close-black"></use>
             </svg>
         </button>
-
         <h2 class="modal-titel">Leave your contacts and we will call you back</h2>
         
         <form>
                 <label for="user_name" class="modal-label">Name</label>
                 <div class="modal-cont-input">
-                    <input type="text" class="modal-input" name="user_name" id="user_name" minlength="3" title="Name" placeholder=" " required />
+                    <input class="modal-input" name="user_name" type="text" id="user_name" minlength="3" title="Name" placeholder=" " required />
                     <svg class="modal-svg-input" width="18" height="24">
                         <use class="" href="./images/symbol.svg#icon-person-black-18dp-1"></use>
                     </svg>
                 </div>
-            
                 <label for="user_tel" class="modal-label">Phone</label>
                 <div class="modal-cont-input">
                     <input type="tel" class="modal-input" name="tel" id="user_tel" title="Phone" minlength="10" placeholder=" " required />
@@ -446,7 +446,6 @@
                         <use class="" href="./images/symbol.svg#icon-phone-black-18dp-2"></use>
                     </svg>
                 </div>
-            
                 <label for="user_email" class="modal-label">Email</label>
                 <div class="modal-cont-input">
                     <input type="email" title="E-mail" class="modal-input" name="user_email" id="user_email" placeholder=" " required />
@@ -454,11 +453,9 @@
                         <use class="" href="./images/symbol.svg#icon-email-black-18dp-3"></use>
                     </svg>
                 </div>
-    
                 <label for="comment" class="modal-label ">Comment</label>
-                <textarea name="comment" class="modal-comment comment" id="comment" cols="" rows="" placeholder="Text input"></textarea>
-    
-            <div >
+                <textarea name="comment" class="modal-comment comment" id="comment" placeholder="Text input"></textarea>
+                <div >
                 <input class="modal-chec is-hidden" type="checkbox" id="treaty" name="treaty" value="" required>
                 <label for="treaty" class="chec-text">
                     <span class="modal-span">
@@ -468,12 +465,12 @@
                     </span>
                     I accept the terms and conditions of the<a href="" class="link-label"> Privacy Policy</a></label>
             </div>
-    
             <button type="submit" class="modal-button">Send</button>
         </form>
     </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>
